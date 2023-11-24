@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>អគ្គីសនីកម្ពុជា</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <h1 style="text-align: center;">អគ្គីសនីកម្ពុជា</h1>
+  <div class="container">
+    <form class="input-container">
+      <label>ឈ្មោះអតិថិជន:</label>
+      <input type="text" placeholder="បញ្ចូលឈ្មោះរបស់អ្នក" id="txtcustomer"> <br>
+      <label>លេខទូរស្ទព័:</label>
+      <input type="number" placeholder="បញ្ចូលលេខទូរស្ទព័របស់អ្នក (+855)" id="txtphone"> <br>
+      <label>លេខកុងទ័រចាស់:</label>
+      <input type="number" placeholder="បញ្ចូលលេខកុងទ័រចាស់របស់អ្នក" id="txtold"> <br>
+      <label>លេខកុងទ័រថ្មី:</label>
+      <input type="number" placeholder="បញ្ចូលលេខកុងទ័រថ្មីរបស់អ្នក" id="txtnew"> <br>
+      <div>
+        <label>សំរាម:</label>
+        <input type="checkbox" name="txttrash" value="10000" id="txttrash" onclick="validate()">
+      </div>
+      <div class="btn">
+        <input type="button" value="គណនា" onclick="Calculate()">
+        <input type="button" value="លុប" onclick="Del()">
+      </div>
+    </form>
+    <div class="display-container">
+      <div class="logo">
+        <img src="../img/edc-logo.png" alt="">
+      </div>
+      <div class="content">
+        <h2>ឈ្មោះអតិថិជន:
+          <span id="name">...</span>
+        </h2>
+        <h2>លេខទូរស្ទព័:
+          <span id="phone">(+855)</span>
+        </h2>
+        <h2>លេខកុងទ័រចាស់:
+          <span id="old">0Kw</span>
+        </h2>
+        <h2>លេខកុងទ័រថ្មី:
+          <span id="inew">0Kw</span>
+        </h2>
+        <h2>ចំនួនប្រើក្នុងខែនេះ:
+          <span id="totalkw">0Kw</span>
+        </h2>
+        <h2>សំរាម:
+          <span id="trash">0រៀល</span>
+        </h2>
+        <h2>តម្លៃសរុប:
+          <span id="total">0រៀល</span>
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="price-list">
+    <ul>
+      <li>ប្រសិនបើប្រើភ្លើងអស់ចន្លោះ <span>0Kw ដល់ 50Kw</span> (គិត <span>500រៀល ក្នុង 1kw</span>)</li>
+      <li>ប្រសិនបើប្រើភ្លើងអស់ចន្លោះ <span>51Kw ដល់ 100Kw</span> (គិត <span>1000រៀល ក្នុង 1kw</span>)</li>
+      <li>ប្រសិនបើប្រើភ្លើងអស់ចន្លោះ <span>101Kw ដល់ 150Kw</span> (គិត <span>1500រៀល ក្នុង 1kw</span>)</li>
+      <li>ប្រសិនបើប្រើភ្លើងអស់ចន្លោះ <span>151Kw ដល់ 200Kw</span> (គិត <span>2000រៀល ក្នុង 1kw</span>)</li>
+      <li>ប្រសិនបើប្រើភ្លើងច្រើនជាង <span>200Kw</span> (គិត <span>2500រៀល ក្នុង 1kw</span>)</li>
+    </ul>
+  </div>
+  <script src="../script/index.js"></script>
+</body>
+
+</html>

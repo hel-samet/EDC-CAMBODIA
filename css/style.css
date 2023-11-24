@@ -1,0 +1,150 @@
+:root {
+  --shadow: 1px 1px 5px #828383c5;
+  --radius: 7px;
+}
+@font-face {
+  font-family: "samet";
+  src: url("/font-khmer/Battambang-Bold.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "samet";
+  font-size: 15px;
+}
+
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+
+.titles {
+  padding: 0;
+  position: relative;
+  top: 20px;
+  padding-bottom: 20px;
+}
+
+.titles h1 {
+  color: brown;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0;
+  font-size: 30px;
+}
+.titles h1{
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: #54b3d6;
+  padding: 10px;
+  margin: 0 -.25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.titles h1:hover {
+  color: white;
+  box-shadow: inset 310px 0 0 0 #54b3d6;;
+}
+
+.input-container {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#title {
+  font-family: "samet";
+  font-weight: 700;
+}
+
+.input-container label {
+  font-size: 20px;
+}
+
+.input-container>input {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.btn input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  background-color: rgb(97, 72, 208);
+  color: #fff;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.btn input:hover {
+  opacity: 0.5;
+}
+
+.display-container {
+  width: 100%;
+  padding: 10px;
+  background: #abbaab;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ffffff, #abbaab);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.display-container .logo img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: 30px;
+}
+
+.display-container .content h2 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: blue;
+}
+
+.display-container .content h2 span {
+  font-weight: 500;
+  color: black;
+  font-size: 17px;
+}
+
+.description {
+  width: 100%;
+  padding: 0;
+
+}
+
+.price-list {
+  position: relative;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.price-list ul {
+  border-radius: var(--radius);
+  list-style-position: inside;
+  padding: 0;
+}
+
+.price-list ul li {
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: 300;
+}
+
+.price-list ul li span {
+  color: red;
+}
+
+.btn {
+  text-align: left;
+}
